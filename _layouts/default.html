@@ -3,11 +3,28 @@
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta charset="utf-8">
-    <title>{{ page.title }} - {{ site.title }}</title>
-    
+    <title>{{ page.title }} BePop Culture {{ site.title }}</title>
+
     <link rel="stylesheet" href="{{ "/assets/css/main.css" | relative_url }}">
   </head>
   <body>
+
+<ul>
+  {% for post in site.posts %}
+    {% if page.category %}
+      {% if post.category == page.category %}
+        <li>{{ post.title}} - {{ post.category }} </li>
+      {% endif %}
+    {% else %}
+        <li>{{ post.title }} - {{ post.category }} </li>
+    {% endif %}
+  {% endfor %}
+</ul>
+
+
+
+
+
     {{ content}}
   </body>
 </html>
