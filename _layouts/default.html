@@ -4,16 +4,20 @@
 
 <body>
   {% include header.html %}
-
   <ul>
     {% for post in site.posts %}
-    {% if page.category %}
-    {% if post.category == page.category %}
-    <li>{{ post.title}} - {{ post.category }} </li>
-    {% endif %}
-    {% else %}
-    <li>{{ post.title }} - {{ post.category }} </li>
-    {% endif %}
+      {% if page.category %}
+        {% if post.category == page.category %}
+          <li>
+            <img src="{{ post.image  | relative_url }}" class="petit"/>
+            <a href="{{ post.url  | relative_url }}">{{ post.title }} - {{ post.category }}</a>
+          </li>
+        {% endif %}
+      {% else %}
+        <li>
+          <a href="{{ post.url  | relative_url }}">{{ post.title }} - {{ post.category }}</a>
+        </li>
+      {% endif %}
     {% endfor %}
   </ul>
 
