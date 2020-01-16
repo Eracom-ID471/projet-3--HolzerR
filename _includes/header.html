@@ -1,11 +1,14 @@
   <a href=" {{"index.html" | relative_url}}"> home </a>
 
+<hr />
 
 <ul>
 
   {% for nav in site.navigation %}
-  <li>
+  <li style="display: inline; padding-left: 200px;">
     <a href=" {{ nav.url | relative_url }}"> {{nav.title}} </a>
   </li>
   {% endfor %}
 </ul>
+
+<hr />
