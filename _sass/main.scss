@@ -1,12 +1,20 @@
 $backgroundColor: #ffffff;
 $bodyColor: #000000;
-$bodyFont: -apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+$bodyFont: -apple-system,
+BlinkMacSystemFont,
+"Segoe UI",
+Helvetica,
+Arial,
+sans-serif,
+"Apple Color Emoji",
+"Segoe UI Emoji",
+"Segoe UI Symbol";
 
 body {
   background: $backgroundColor;
   color: $bodyColor;
   font-family: 'Montserrat', sans-serif;
-background-image: radial-gradient(circle, #ffc0cb, #ffc1cc, #ffc2cc, #ffc3cd, #ffc4ce, #ffc5cf, #ffc7d1, #ffc8d2, #ffcbd4, #ffcdd6, #ffd0d8, #ffd2da);
+  background-image: radial-gradient(circle, #ffc0cb, #ffc1cc, #ffc2cc, #ffc3cd, #ffc4ce, #ffc5cf, #ffc7d1, #ffc8d2, #ffcbd4, #ffcdd6, #ffd0d8, #ffd2da);
 }
 
 body a {
@@ -14,39 +22,33 @@ body a {
   text-decoration: none;
 }
 
-a:hover{
+a:hover {
   color: black;
 }
 
 
 .petit {
-  // height: auto;
   max-width: 500px;
-  // width: 100%;
-  // display: block;
-  // margin-left: auto;
-  // margin-right: auto
 }
 
 .image-container {
-  grid-template-columns: auto;
-  justify-items: center;
+  width: 80%;
+  margin: 0 auto;
 }
 
 ul {
-list-style:none;
-margin-top: 10px;
-padding-top :10px;
-}
-li {
-
+  list-style: none;
+  margin-top: 10px;
+  padding-top: 10px;
 }
 
-hr{
-       height: 2px;
-       background-color: white ;
-       border: none;
-     }
+li {}
+
+hr {
+  height: 2px;
+  background-color: white;
+  border: none;
+}
 
 
 Nav {
