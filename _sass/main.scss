@@ -7,6 +7,7 @@ body {
   color: $bodyColor;
   font-family: 'Montserrat', sans-serif;
 background-image: radial-gradient(circle, #ffc0cb, #ffc1cc, #ffc2cc, #ffc3cd, #ffc4ce, #ffc5cf, #ffc7d1, #ffc8d2, #ffcbd4, #ffcdd6, #ffd0d8, #ffd2da);
+}
 
 body a {
   color: white;
@@ -19,9 +20,17 @@ a:hover{
 
 
 .petit {
-height: auto;
-max-width: 500px;
-width: 100%;
+  // height: auto;
+  max-width: 500px;
+  // width: 100%;
+  // display: block;
+  // margin-left: auto;
+  // margin-right: auto
+}
+
+.image-container {
+  grid-template-columns: auto;
+  justify-items: center;
 }
 
 ul {
