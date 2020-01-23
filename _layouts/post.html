@@ -3,9 +3,7 @@
   <body>
     {% include header.html %}
     <h1>{{ page.title }}</h1>
-    {% for post in site.posts %}
-    <p>{{ post.texte }}</p>
-    {% endfor %}
+    <h3>{{page.realisateur}}</h3>
     <img class="petit" src="{{ page.image | relative_url }}" />
     {{ content }}
   </body>

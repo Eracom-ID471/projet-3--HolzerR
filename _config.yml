@@ -11,3 +11,6 @@ navigation:
     url: /movies.html
   - title: Séries
     url: /serie.html
+
+  - title: Contribute
+    url: /contribute.html
