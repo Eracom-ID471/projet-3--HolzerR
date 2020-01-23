@@ -4,7 +4,9 @@
     {% include header.html %}
     <h1>{{ page.title }}</h1>
     <h3>{{page.realisateur}}</h3>
-    <img class="petit" src="{{ page.image | relative_url }}" />
+
+    <img class="petit" src="{{ page.image | relative_url }}" /></img>
+      <img class="petit" src="{{ page.image2 | relative_url }}" /></img>
     {{ content }}
   </body>
 </html>
